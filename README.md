@@ -35,13 +35,13 @@ RTDETR-L.pt 【VS】 RTDETR-L.trt
 <table>
     <tr>
         <td>
-            <center><img src="github/rtdetr.pt-image-20241126185843760.png" >图1  RTDETR-L.pt </center>
+            <center><img src=".github/rtdetr.pt-image-20241126185843760.png" >图1  RTDETR-L.pt </center>
         </td>
         <td >
-            <center><img src="github/bus-yolov8.png"  >图2 YOLOv8.trt</center>
+            <center><img src=".github/bus-yolov8.png"  >图2 YOLOv8.trt</center>
         </td>
         <td >
-            <center><img src="github/bus-rtdetr-l.jpg"  >图3 RTDETR-L.trt</center>
+            <center><img src=".github/bus-rtdetr-l.jpg"  >图3 RTDETR-L.trt</center>
         </td>
     </tr>
 </table>
@@ -52,10 +52,10 @@ RTDETR-L.pt 【VS】 RTDETR-L.trt
 <table>
     <tr>
         <td>
-            <center><img src="github/rtdetr.pt-image-20241126190022880.png" >图1  RTDETR-L.pt </center>
+            <center><img src=".github/rtdetr.pt-image-20241126190022880.png" >图1  RTDETR-L.pt </center>
         </td>
         <td >
-            <center><img src="github/rtdetr.trt-image-20241126190044708.png"  >图2 RTDETR-L.trt</center>
+            <center><img src=".github/rtdetr.trt-image-20241126190044708.png"  >图2 RTDETR-L.trt</center>
         </td>
     </tr>
 </table>
@@ -74,8 +74,8 @@ YOLOV8n 【VS】 YOLOv8.trt
 
 <table>
     <tr>
-        <td ><center><img src="github/yolov8.pt-image-20241128193629271.png" >图1  YOLOV8.pt </center></td>
-        <td ><center><img src="github/yolov8.trt-image-20241128193512116.png"  >图2 YOLOV8.trt</center></td>
+        <td ><center><img src=".github/yolov8.pt-image-20241128193629271.png" >图1  YOLOV8.pt </center></td>
+        <td ><center><img src=".github/yolov8.trt-image-20241128193512116.png"  >图2 YOLOV8.trt</center></td>
     </tr>
 </table>
 
