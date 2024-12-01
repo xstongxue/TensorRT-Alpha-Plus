@@ -1,0 +1,68 @@
+(2024-11-28 10:27:31) [INFO    ] Crow/master server is running at http://0.0.0.0:8888 using 56 threads
+(2024-11-28 10:27:31) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+(2024-11-28 10:27:34) [INFO    ] Request: 192.168.4.211:64933 0x56516ff33840 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr-l.trt, gpu: 1, port: 8888, is_save: false, is_show: true
+[2024-11-28 18:27:34][[31merror[0m][cuda_tools.cpp:22]:CUDA Runtime error cudaSetDevice(device_id) # invalid device ordinal, code = cudaErrorInvalidDevice [ 101 ] in file /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_infer.cpp:476
+[2024-11-28 18:27:36][[31merror[0m][cuda_tools.cpp:22]:CUDA Runtime error cudaSetDevice(device_id) # invalid device ordinal, code = cudaErrorInvalidDevice [ 101 ] in file /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/cuda_tools.cpp:74
+[2024-11-28 18:27:36][[31merror[0m][preprocess_kernel.cu:139]:launch failed: invalid device ordinal
+[2024-11-28 18:27:36][[31merror[0m][rtdetr_decode.cu:71]:launch failed: invalid device ordinal
+[2024-11-28 18:27:36][[35minfo[0m][rtdetr_web.cpp:165]:Engine destroy.
+(2024-11-28 10:27:36) [INFO    ] Response: 0x56516ff33840 /pic_infer 200 0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28da0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28da8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28db0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28db8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28dc0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28dc8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28dd0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28dd8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28de0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28de8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28df0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28df8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e00
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e08
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e10
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e18
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e20
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e28
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e30
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e38
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e40
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e48
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e50
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e58
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e60
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e68
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e70
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e78
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e80
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e88
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e90
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28e98
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28ea0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28ea8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28eb0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28eb8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28ec0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28ec8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28ed0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28ed8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28ee0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28ee8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28ef0
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28ef8
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f00
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f08
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f10
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f18
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f20
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f28
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f30
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f38
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f40
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f48
+(2024-11-28 10:30:53) [INFO    ] Closing IO service 0x56516ff28f50
+(2024-11-28 10:30:53) [INFO    ] Closing main IO service (0x56516fed8358)
+(2024-11-28 10:30:53) [INFO    ] Exiting.

@@ -1,0 +1,5 @@
+weights
+rtdetr_dla
+weights/*
+rtdetr_dla/*
+.!github

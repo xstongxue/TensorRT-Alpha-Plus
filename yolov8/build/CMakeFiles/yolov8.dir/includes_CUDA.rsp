@@ -1,0 +1,1 @@
+-I/usr/local/cuda/include -I"/data02/xs/app/TensorRT-8.6.1.6/samples/common" -I"/data02/xs/code/tensorrt-alpha/yolov8" -isystem /usr/include/opencv

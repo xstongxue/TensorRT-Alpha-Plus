@@ -1,0 +1,9 @@
+ultralytics==8.2.64
+python==3.8.19
+torch==1.13.1
+onnx== 1.17.0
+torchvision==0.14.1 # Image classification
+onnx-simplifier==0.4.8
+onnxruntime==1.8.0
+opencv-python==4.1.2.30
+tensorrt==8.6.1

@@ -1,0 +1,86 @@
+(2024-11-28 11:34:22) [INFO    ] Crow/master server is running at http://0.0.0.0:8866 using 56 threads
+(2024-11-28 11:34:22) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+(2024-11-28 11:34:56) [INFO    ] Request: 192.168.4.211:52619 0x5611fb983c10 HTTP/1.1 POST /pic_infer
+Received request, processing multipart data...
+Received parameters - model_path: ../../weights/yolov8n.trt, video_path: , image_path: , camera_id: 0, is_save: 1
+Found 'img', processing...
+File uploaded: 6406407.jpg
+Image decoded successfully, saving to temp file...
+[11/28/2024-19:34:57] [I] [TRT] Loaded engine size: 20 MiB
+[11/28/2024-19:34:57] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in engine deserialization: CPU +0, GPU +17, now: CPU 0, GPU 17 (MiB)
+[11/28/2024-19:34:57] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +74, now: CPU 0, GPU 91 (MiB)
+[11/28/2024-19:34:57] [I] the engine's info:
+[11/28/2024-19:34:57] [I] idx = 0, images: -1, 3, 640, 640, 
+[11/28/2024-19:34:57] [I] idx = 1, output0: -1, 84, 8400, 
+[11/28/2024-19:34:57] [I] the context's info:
+[11/28/2024-19:34:57] [I] idx = 0, images: 1, 3, 640, 640, 
+[11/28/2024-19:34:57] [I] idx = 1, output0: 1, 84, 8400, 
+Image size: [640 x 640]
+Image type: 16
+Image channels: 3
+ boundingbox information: 
+Class ID: sports ball, Coordinates: (396.602, 0.0686722), (480.278, 57.6299), onfidence: 0.275243
+Class ID: person, Coordinates: (243.804, 153.136), (396.817, 639.057), onfidence: 0.792378
+Class ID: person, Coordinates: (416.119, 253.521), (637.902, 639.911), onfidence: 0.902826
+Class ID: person, Coordinates: (121.858, 140.251), (256.385, 639.461), onfidence: 0.808205
+[11/28/2024-19:34:57] [I] preprocess time = 2.47795ms; infer time = 141.965ms; postprocess time = 8.13005ms;
+Cleared objectss[0], size: 0
+Detected boxes: 4
+(2024-11-28 11:34:57) [INFO    ] Response: 0x5611fb983c10 /pic_infer 200 0
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965110
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965118
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965120
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965128
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965130
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965138
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965140
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965148
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965150
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965158
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965160
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965168
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965170
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965178
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965180
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965188
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965190
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965198
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651a0
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651a8
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651b0
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651b8
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651c0
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651c8
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651d0
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651d8
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651e0
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651e8
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651f0
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9651f8
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965200
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965208
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965210
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965218
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965220
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965228
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965230
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965238
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965240
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965248
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965250
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965258
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965260
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965268
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965270
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965278
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965280
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965288
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965290
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb965298
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9652a0
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9652a8
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9652b0
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9652b8
+(2024-11-28 11:35:27) [INFO    ] Closing IO service 0x5611fb9652c0
+(2024-11-28 11:35:27) [INFO    ] Closing main IO service (0x5611fb9745b8)
+(2024-11-28 11:35:27) [INFO    ] Exiting.

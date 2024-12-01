@@ -1,0 +1,4 @@
+/data02/xs/code/tensorrt-alpha/rtdetr/build/CMakeFiles/Linfer.dir
+/data02/xs/code/tensorrt-alpha/rtdetr/build/CMakeFiles/app_rtdetr.dir
+/data02/xs/code/tensorrt-alpha/rtdetr/build/CMakeFiles/edit_cache.dir
+/data02/xs/code/tensorrt-alpha/rtdetr/build/CMakeFiles/rebuild_cache.dir
