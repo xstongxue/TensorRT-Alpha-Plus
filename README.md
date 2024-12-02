@@ -13,7 +13,7 @@ TensorRT for Web-RTDETR、Web-YOLOv8、RTDETR、YOLOv8、YOLOv8-Pose、YOLOv8-Se
 
 # 待实现
 
-> 1. 集成YOLOv10和YOLO11并提供 WebAPI
+> 1. 集成 YOLOv10 和 YOLO11 并提供 WebAPI
 > 2. WebAPI 提供视频的输入格式
 
 
@@ -207,6 +207,16 @@ set(TensorRT_ROOT /data02/xs/app/TensorRT-8.6.1.6/)
 
 
 ## 导出
+
+常用模型的权重下载：
+
+| model | 夸克网盘 |
+| ----- | -------- |
+|       |          |
+|       |          |
+|       |          |
+
+
 
 **模型导出：pt -> onnx -> trt/engine**
 
