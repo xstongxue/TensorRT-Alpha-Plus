@@ -306,7 +306,7 @@ port=8890 # 端口号
 前端传入参数指定：
 
 ```html
-img: file  # 上次检测的图像
+img: file  # 上传检测的图像
 is_save："false" / "true"  # 默认 "false"
 is_show："false" / "true"  # 默认 "false"
 ```
@@ -354,7 +354,7 @@ make -j10
 前端传入参数指定：
 
 ```html
-img: file  # 上次检测的图像
+img: file  # 上传检测的图像
 is_save："false" / "true"  # 默认 "false"
 model_path："../../weights/yolov8n.trt"  # 默认 "../../weights/yolov8n.trt"
 ```
