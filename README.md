@@ -1,9 +1,11 @@
+# TensorRT-Alpha-Plus🔥
+
 TensorRT for Web-RTDETR、Web-YOLOv8、RTDETR、YOLOv8、YOLOv8-Pose、YOLOv8-Seg、YOLOv8-Cls、YOLOv7、YOLOv6、YOLOv5......
 
 # 功能
 
-> 1. 通过 TensorRT 部署：支持主流的目标检测模型
-> 2. 提供 RTDETR 和 YOLOv8 的 WebAPI，可快速集成到工业环境
+> 1. 通过 TensorRT 部署：支持主流的目标检测模型🔥
+> 2. 提供 RTDETR 和 YOLOv8 的 WebAPI，可快速集成到工业环境🔥
 > 3. WebAPI 使用 CPP 的 Crow 框架
 > 4. Json 处理使用 nlohmann 的 JSON for Modern C++
 
