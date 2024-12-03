@@ -167,7 +167,7 @@ cd /data02/xs/app/TensorRT-8.6.1.6/bin
 
 ## 工具
 
-安装：
+必备工具安装：
 
 ```shell
 sudo apt-get update 
@@ -181,16 +181,71 @@ sudo apt-get install libopencv-dev
 pkg-config --modversion opencv
 ```
 
+**安装 Crow**
+
+需要先安装 Asio：
+
+```bash
+# 下载最新版本的 Asio
+wget https://github.com/chriskohlhoff/asio/archive/refs/tags/asio-1-24-0.tar.gz
+# 解压下载的 tar 文件
+tar -xvzf asio-1-24-0.tar.gz
+# 进入解压后的目录
+cd asio-asio-1-24-0/asio
+# 编译安装
+./autogen.sh
+./configure
+make
+sudo make install
+
+# 检查 Asio 是否安装成功
+$ ls /usr/local/include/asio.hpp
+/usr/local/include/asio.hpp
+```
+
+**安装 Crow**
+
+```bash
+git clone https://github.com/CrowCpp/Crow.git
+mkdir build
+cd build
+cmake .. -DCROW_BUILD_EXAMPLES=OFF -DCROW_BUILD_TESTS=OFF
+sudo make install
+```
+
+Demo.cpp 测试 Crow 是否可用：
+
+```cpp
+#include "crow.h"
+
+int main()
+{
+    crow::SimpleApp app;
+
+    CROW_ROUTE(app, "/")
+    ([]() {
+        return "Hello, world!";
+    });
+
+    app.port(8888).run();
+}
+```
+
 
 
 
 
 ## 配置
 
-下载并配置 TensorRT-Alpha-Plus
+下载 TensorRT-Alpha-Plus 项目
 
 ```shell
-git clone https://github.com/FeiYull/tensorrt-alpha
+git clone https://github.com/xstongxue/TensorRT-Alpha-Plus
+```
+
+配置 TensorRT-Alpha-Plus
+
+```bash
 cd tensorrt-alpha/cmake
 vim common.cmake
 
@@ -201,7 +256,6 @@ echo $LD_LIBRARY_PATH
 # 把common.cmake文件第20行中的TensorRT_ROOT修改成您的TensorRT安装目录, 例如改成如下:
 set(TensorRT_ROOT /data02/xs/app/TensorRT-8.6.1.6/)
 ```
-
 
 
 
