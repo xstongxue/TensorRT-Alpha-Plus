@@ -276,7 +276,7 @@ CUDA_VISIBLE_DEVICES=1 /data02/xs/app/TensorRT-8.6.1.6/bin/trtexec  --onnx=/data
 编译
 
 ```bash
-cd /data02/xs/code/tensorrt-alpha/rtdetr
+cd /data02/xs/code/tensorrt-alpha-plus/rtdetr
 mkdir build
 cd build
 cmake ..
@@ -294,18 +294,18 @@ CUDA_VISIBLE_DEVICES=1 ./app_rtdetr
 #### **Web 版**
 
 ```bash
-cd /data02/xs/code/tensorrt-alpha/webapi_rtdetr
+cd /data02/xs/code/tensorrt-alpha-plus/webapi_rtdetr
 mkdir build
 cd build
 # 编译
-bash cmake_app_rtdetr.sh
+bash cmake_web_rtdetr.sh
 # 运行
-bash run_app_rtdetr.sh
+bash run_web_rtdetr.sh
 # 终止
-bash kill_app_rtdetr.sh
+bash kill_web_rtdetr.sh
 ```
 
-参数的设置，打开 run_app_rtdetr.sh
+参数的设置，打开 run_web_rtdetr.sh
 
 ```cmake
 model_path="../../weights/rtdetr.trt"
@@ -381,3 +381,17 @@ model_path："../../weights/yolov8n.trt"  # 默认 "../../weights/yolov8n.trt"
 - https://github.com/FeiYull/tensorrt-alpha
 - https://github.com/CrowCpp/Crow
 - https://github.com/nlohmann/json
+
+
+## Citation
+
+```
+@misc{xstongxue_TensorRT-Alpha-Plus,  
+  author = {xstongxue},  
+  title = {TensorRT-Alpha-Plus},  
+  year = {2024},  
+  publisher = {GitHub},  
+  journal = {GitHub repository},  
+  howpublished = {https://github.com/xstongxue/TensorRT-Alpha-Plus}
+}
+```
