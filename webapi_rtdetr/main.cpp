@@ -1,7 +1,7 @@
 #pragma once
 #include <opencv2/opencv.hpp>
-#include "/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/app_rtdetr_web.cpp"
-#include "/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/threadpool.cpp"
+#include "../webapi_rtdetr/apps/app_rtdetr_web.cpp"
+#include "../webapi_rtdetr/apps/threadpool.hpp"
 #include "crow.h"
 #include "crow/middlewares/cors.h"
 #include "../utils/json.hpp" 

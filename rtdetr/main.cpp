@@ -1,6 +1,6 @@
 
 #include <opencv2/opencv.hpp>
-#include "/data02/xs/code/tensorrt-alpha/rtdetr/apps/app_rtdetr.cpp"
+#include "../rtdetr/apps/app_rtdetr.cpp"
 
 using namespace std;
 
