@@ -6,8 +6,9 @@ TensorRT for Web-RTDETR、Web-YOLOv8、RTDETR、YOLOv8、YOLOv8-Pose、YOLOv8-Se
 
 > 1. 通过 TensorRT 部署：支持主流的目标检测模型🔥
 > 2. 提供 RTDETR 和 YOLOv8 的 WebAPI，可快速集成到工业环境🔥
-> 3. WebAPI 使用 CPP 的 Crow 框架
-> 4. Json 处理使用 nlohmann 的 JSON for Modern C++
+> 3. WebAPI 使用 Crow 框架来解析 HTTP 请求
+> 4. WebAPI 新增使用 C++11 手动实现的线程池，提高并发能力🔥
+> 5. Json 处理使用 nlohmann 的 JSON for Modern C++
 
 
 

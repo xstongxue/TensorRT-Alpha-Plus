@@ -1,6 +1,7 @@
 #pragma once
 #include <opencv2/opencv.hpp>
 #include "/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/app_rtdetr_web.cpp"
+#include "/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/threadpool.cpp"
 #include "crow.h"
 #include "crow/middlewares/cors.h"
 #include "../utils/json.hpp" 
@@ -18,6 +19,44 @@ std::string inferGetIMGBase64(const cv::Mat& img, const string& engine_file, int
 std::string inferGetIMGBinary(const cv::Mat& img, const string& engine_file, int gpuid);
 
 extern std::vector<std::string> cocolabels;
+
+class InferTask : public Task {
+public:
+    InferTask(cv::Mat img, const std::string& model_path, int gpuid, json& response_json)
+        : img(std::move(img)), model_path(model_path), gpuid(gpuid), response_json(response_json) {}
+
+    void execute() override {
+        RTDETRWEB::BoxArray boxes;
+		// 获取推理的信息
+        boxes = inferGetBoxes(img, model_path, gpuid);
+        json boxes_json;
+        for (const auto& box : boxes) {
+            auto name = cocolabels[box.label];
+            json box_json;
+            box_json["box"] = { box.left, box.top, box.right, box.bottom };
+            box_json["type"] = name;
+            box_json["confidence"] = box.confidence;
+            boxes_json.push_back(box_json);
+        }
+
+        // Construct response
+        response_json = {
+            {"code", 200},
+            {"message", "success"},
+            {"data", {{"json", boxes_json}}}
+        };
+
+        // Release resources
+		img.release();  // 显式释放
+		boxes.clear();  // 显示释放
+    }
+
+private:
+    cv::Mat img;
+    std::string model_path;
+    int gpuid;
+    json& response_json;
+};
 
 int main(int argc, char* argv[]){
     try 
@@ -46,6 +85,8 @@ int main(int argc, char* argv[]){
 			.origin("192.168.4.9:8889")
 		.prefix("/nocors")
 			.ignore();
+
+		ThreadPool thread_pool(4);  // 创建线程池，假设我们有4个线程
 
 		// 上传文件处理路由
 		CROW_ROUTE(app, "/pic_infer").methods(crow::HTTPMethod::Post, crow::HTTPMethod::Options)([&](const crow::request& req) {
@@ -105,6 +146,7 @@ int main(int argc, char* argv[]){
 
 					// 使用 OpenCV 将上传的文件内容转换为 cv::Mat
 					std::vector<uchar> img_data(part_value.body.begin(), part_value.body.end());
+					std::vector<uchar> temp_v;	
 					cv::Mat img = cv::imdecode(img_data, cv::IMREAD_COLOR);
 					if (img.empty()) {
 						std::cout << "Error: Failed to decode image" << std::endl;
@@ -138,41 +180,52 @@ int main(int argc, char* argv[]){
 						// 	return crow::response(200, detect_img_base64);
 						// }
 					}
-                    else
-                    {
-                         // 记录起始时间
-                        auto start = std::chrono::high_resolution_clock::now();
-                        // 获取推理的信息
-                        boxes = inferGetBoxes(img, model_path, gpuid);
-                        // 记录结束时间
-                        auto end = std::chrono::high_resolution_clock::now();
-                        // 计算耗时
-                        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
-                        std::cout << "IMG Name: " << filename << ", inferGetBoxes took " << duration << " ms.";
-                        std::cout << ", Detected boxes: " << boxes.size() << std::endl;
-                    }
-					// 构建返回的JSON
-					for (const auto& box : boxes) {
-                        auto name = cocolabels[box.label];
-						json box_json;
-						box_json["box"] = {box.left, box.top, box.right, box.bottom};
-						box_json["type"] = name;
-						box_json["confidence"] = box.confidence;
-						boxes_json.push_back(box_json);
-					}
+					// 创建并提交任务到线程池（2024.12.20修改版本：加入线程池）
+                    auto task = std::make_shared<InferTask>(img, model_path, gpuid, response_json);
+                    thread_pool.submitTask(task);  // 提交任务到线程池
 
-					response_json = {
-						{"code", 200},
-						{"message", "success"},
-						{"data", {
-							{"json", boxes_json},
-							// {"img", base64_str}
-						}}
-					};
-					// cout << "response_json: " << response_json.dump(4) << endl;
+					img_data.clear();  // 显示释放
+					std::swap(img_data, temp_v);  // vector 容器通过clear并没有清空，需要通过swap或者shrink_to_fit
+                    // 等待任务执行完成，返回响应
+                    return crow::response(response_json.dump(4));
+                    // else
+                    // {
+                    //      // 记录起始时间
+                    //     auto start = std::chrono::high_resolution_clock::now();
+                    //     // 获取推理的信息
+                    //     boxes = inferGetBoxes(img, model_path, gpuid);
+                    //     // 记录结束时间
+                    //     auto end = std::chrono::high_resolution_clock::now();
+                    //     // 计算耗时
+                    //     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+                    //     std::cout << "IMG Name: " << filename << ", inferGetBoxes took " << duration << " ms.";
+                    //     std::cout << ", Detected boxes: " << boxes.size() << std::endl;
+                    // }
+					// // 构建返回的JSON
+					// for (const auto& box : boxes) {
+                    //     auto name = cocolabels[box.label];
+					// 	json box_json;
+					// 	box_json["box"] = {box.left, box.top, box.right, box.bottom};
+					// 	box_json["type"] = name;
+					// 	box_json["confidence"] = box.confidence;
+					// 	boxes_json.push_back(box_json);
+					// }
+
+					// response_json = {
+					// 	{"code", 200},
+					// 	{"message", "success"},
+					// 	{"data", {
+					// 		{"json", boxes_json},
+					// 		// {"img", base64_str}
+					// 	}}
+					// };
+					// // cout << "response_json: " << response_json.dump(4) << endl;
 					
-					img.release();  // 显式释放内存
-					return crow::response(response_json.dump(4));  // 返回推理结果
+					// img.release();  // 显式释放内存
+					// boxes.clear();  // 显示释放
+					// img_data.clear();  // 显示释放
+					// std::swap(img_data, temp_v);  // vector 容器通过clear并没有清空，需要通过swap或者shrink_to_fit
+					// return crow::response(response_json.dump(4));  // 返回推理结果
 				}
 			}
 
