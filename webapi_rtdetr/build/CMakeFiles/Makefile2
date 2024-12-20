@@ -45,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1429/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1435/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1429/bin/cmake -E rm -f
+RM = /snap/cmake/1435/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -88,12 +88,12 @@ clean: CMakeFiles/web_rtdetr.dir/clean
 CMakeFiles/rtdetr_web.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtdetr_web.dir/build.make CMakeFiles/rtdetr_web.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtdetr_web.dir/build.make CMakeFiles/rtdetr_web.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target rtdetr_web"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target rtdetr_web"
 .PHONY : CMakeFiles/rtdetr_web.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rtdetr_web.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rtdetr_web.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles 0
 .PHONY : CMakeFiles/rtdetr_web.dir/rule
@@ -105,6 +105,7 @@ rtdetr_web: CMakeFiles/rtdetr_web.dir/rule
 # codegen rule for target.
 CMakeFiles/rtdetr_web.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtdetr_web.dir/build.make CMakeFiles/rtdetr_web.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Finished codegen for target rtdetr_web"
 .PHONY : CMakeFiles/rtdetr_web.dir/codegen
 
 # clean rule for target.
@@ -119,12 +120,12 @@ CMakeFiles/rtdetr_web.dir/clean:
 CMakeFiles/web_rtdetr.dir/all: CMakeFiles/rtdetr_web.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_rtdetr.dir/build.make CMakeFiles/web_rtdetr.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_rtdetr.dir/build.make CMakeFiles/web_rtdetr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=10,11 "Built target web_rtdetr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=11,12 "Built target web_rtdetr"
 .PHONY : CMakeFiles/web_rtdetr.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/web_rtdetr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/web_rtdetr.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles 0
 .PHONY : CMakeFiles/web_rtdetr.dir/rule
@@ -136,6 +137,7 @@ web_rtdetr: CMakeFiles/web_rtdetr.dir/rule
 # codegen rule for target.
 CMakeFiles/web_rtdetr.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/web_rtdetr.dir/build.make CMakeFiles/web_rtdetr.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=11,12 "Finished codegen for target web_rtdetr"
 .PHONY : CMakeFiles/web_rtdetr.dir/codegen
 
 # clean rule for target.

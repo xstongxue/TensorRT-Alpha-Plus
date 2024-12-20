@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1429/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1435/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1429/bin/cmake -E rm -f
+RM = /snap/cmake/1435/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -76,15 +76,15 @@ CMakeFiles/web_rtdetr.dir/main.cpp.o: CMakeFiles/web_rtdetr.dir/flags.make
 CMakeFiles/web_rtdetr.dir/main.cpp.o: /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/main.cpp
 CMakeFiles/web_rtdetr.dir/main.cpp.o: CMakeFiles/web_rtdetr.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/web_rtdetr.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/web_rtdetr.dir/main.cpp.o -MF CMakeFiles/web_rtdetr.dir/main.cpp.o.d -o CMakeFiles/web_rtdetr.dir/main.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/web_rtdetr.dir/main.cpp.o -MF CMakeFiles/web_rtdetr.dir/main.cpp.o.d -o CMakeFiles/web_rtdetr.dir/main.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/main.cpp
 
 CMakeFiles/web_rtdetr.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/web_rtdetr.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/main.cpp > CMakeFiles/web_rtdetr.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/main.cpp > CMakeFiles/web_rtdetr.dir/main.cpp.i
 
 CMakeFiles/web_rtdetr.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/web_rtdetr.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/main.cpp -o CMakeFiles/web_rtdetr.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/main.cpp -o CMakeFiles/web_rtdetr.dir/main.cpp.s
 
 # Object files for target web_rtdetr
 web_rtdetr_OBJECTS = \

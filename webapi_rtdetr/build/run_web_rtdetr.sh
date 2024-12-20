@@ -23,7 +23,7 @@ fi
 
 # 参数设置
 model_path="../../weights/rtdetr-l.trt"
-device=1  # 指定设备
+device=0  # 指定设备
 port=8888 # 端口号
 
 # 参数检查

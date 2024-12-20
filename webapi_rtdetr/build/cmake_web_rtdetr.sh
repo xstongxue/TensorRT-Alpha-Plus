@@ -1,6 +1,17 @@
+# #!/bin/bash
+# set -e  # 遇到错误时退出
+
+# # 重新配置和编译
+# make clean
+# make -j10
+
+
 #!/bin/bash
 set -e  # 遇到错误时退出
 
+# 查找所有非 .sh 文件并删除
+find . -type f ! -name "*.sh" -delete
+
 # 重新配置和编译
-make clean
+cmake ..
 make -j10

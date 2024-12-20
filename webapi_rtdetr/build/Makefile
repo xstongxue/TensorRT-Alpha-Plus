@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1429/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1435/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1429/bin/cmake -E rm -f
+RM = /snap/cmake/1435/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rt
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/snap/cmake/1429/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1435/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/1429/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1435/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -213,6 +213,30 @@ apps/rtdetr_web.s: apps/rtdetr_web.cpp.s
 apps/rtdetr_web.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtdetr_web.dir/build.make CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.s
 .PHONY : apps/rtdetr_web.cpp.s
+
+apps/threadpool.o: apps/threadpool.cpp.o
+.PHONY : apps/threadpool.o
+
+# target to build an object file
+apps/threadpool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtdetr_web.dir/build.make CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o
+.PHONY : apps/threadpool.cpp.o
+
+apps/threadpool.i: apps/threadpool.cpp.i
+.PHONY : apps/threadpool.i
+
+# target to preprocess a source file
+apps/threadpool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtdetr_web.dir/build.make CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.i
+.PHONY : apps/threadpool.cpp.i
+
+apps/threadpool.s: apps/threadpool.cpp.s
+.PHONY : apps/threadpool.s
+
+# target to generate assembly for a file
+apps/threadpool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rtdetr_web.dir/build.make CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.s
+.PHONY : apps/threadpool.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -377,6 +401,9 @@ help:
 	@echo "... apps/rtdetr_web.o"
 	@echo "... apps/rtdetr_web.i"
 	@echo "... apps/rtdetr_web.s"
+	@echo "... apps/threadpool.o"
+	@echo "... apps/threadpool.i"
+	@echo "... apps/threadpool.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

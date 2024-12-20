@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rtdetr_web.dir/apps/rtdetr_decode.cu.o.d"
   "CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o"
   "CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o.d"
+  "CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o"
+  "CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o.d"
   "CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o"
   "CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o.d"
   "CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o"

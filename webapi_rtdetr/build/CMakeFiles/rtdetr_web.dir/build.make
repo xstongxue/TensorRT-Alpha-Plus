@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1429/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1435/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1429/bin/cmake -E rm -f
+RM = /snap/cmake/1435/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -76,15 +76,15 @@ CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o: CMakeFiles/rtdetr_web.dir/f
 CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o: /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/app_rtdetr_web.cpp
 CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o: CMakeFiles/rtdetr_web.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o -MF CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o.d -o CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/app_rtdetr_web.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o -MF CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o.d -o CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/app_rtdetr_web.cpp
 
 CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/app_rtdetr_web.cpp > CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/app_rtdetr_web.cpp > CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.i
 
 CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/app_rtdetr_web.cpp -o CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/app_rtdetr_web.cpp -o CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.s
 
 CMakeFiles/rtdetr_web.dir/apps/rtdetr_decode.cu.o: CMakeFiles/rtdetr_web.dir/flags.make
 CMakeFiles/rtdetr_web.dir/apps/rtdetr_decode.cu.o: CMakeFiles/rtdetr_web.dir/includes_CUDA.rsp
@@ -105,49 +105,63 @@ CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o: CMakeFiles/rtdetr_web.dir/flags
 CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o: /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/rtdetr_web.cpp
 CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o: CMakeFiles/rtdetr_web.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o -MF CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o.d -o CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/rtdetr_web.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o -MF CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o.d -o CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/rtdetr_web.cpp
 
 CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/rtdetr_web.cpp > CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/rtdetr_web.cpp > CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.i
 
 CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/rtdetr_web.cpp -o CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/rtdetr_web.cpp -o CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.s
+
+CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o: CMakeFiles/rtdetr_web.dir/flags.make
+CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o: /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/threadpool.cpp
+CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o: CMakeFiles/rtdetr_web.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o -MF CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o.d -o CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/threadpool.cpp
+
+CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/threadpool.cpp > CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.i
+
+CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/apps/threadpool.cpp -o CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.s
 
 CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o: CMakeFiles/rtdetr_web.dir/flags.make
 CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o: /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/cuda_tools.cpp
 CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o: CMakeFiles/rtdetr_web.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o -MF CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o.d -o CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/cuda_tools.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o -MF CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o.d -o CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/cuda_tools.cpp
 
 CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/cuda_tools.cpp > CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/cuda_tools.cpp > CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.i
 
 CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/cuda_tools.cpp -o CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/cuda_tools.cpp -o CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.s
 
 CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o: CMakeFiles/rtdetr_web.dir/flags.make
 CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o: /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/ilogger.cpp
 CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o: CMakeFiles/rtdetr_web.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o -MF CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o.d -o CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/ilogger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o -MF CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o.d -o CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/ilogger.cpp
 
 CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/ilogger.cpp > CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/ilogger.cpp > CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.i
 
 CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/ilogger.cpp -o CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/ilogger.cpp -o CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.s
 
 CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o: CMakeFiles/rtdetr_web.dir/flags.make
 CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o: CMakeFiles/rtdetr_web.dir/includes_CUDA.rsp
 CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o: /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/preprocess_kernel.cu
 CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o: CMakeFiles/rtdetr_web.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CUDA object CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CUDA object CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o -MF CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o.d -x cu -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/preprocess_kernel.cu -o CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o
 
 CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.i: cmake_force
@@ -161,36 +175,37 @@ CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.s: cmake_force
 CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o: CMakeFiles/rtdetr_web.dir/flags.make
 CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o: /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_infer.cpp
 CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o: CMakeFiles/rtdetr_web.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o -MF CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o.d -o CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_infer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o -MF CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o.d -o CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_infer.cpp
 
 CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_infer.cpp > CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_infer.cpp > CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.i
 
 CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_infer.cpp -o CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_infer.cpp -o CMakeFiles/rtdetr_web.dir/trt_common/trt_infer.cpp.s
 
 CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o: CMakeFiles/rtdetr_web.dir/flags.make
 CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o: /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_tensor.cpp
 CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o: CMakeFiles/rtdetr_web.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o -MF CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o.d -o CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_tensor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o -MF CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o.d -o CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.o -c /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_tensor.cpp
 
 CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_tensor.cpp > CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_tensor.cpp > CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.i
 
 CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_tensor.cpp -o CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/trt_common/trt_tensor.cpp -o CMakeFiles/rtdetr_web.dir/trt_common/trt_tensor.cpp.s
 
 # Object files for target rtdetr_web
 rtdetr_web_OBJECTS = \
 "CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o" \
 "CMakeFiles/rtdetr_web.dir/apps/rtdetr_decode.cu.o" \
 "CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o" \
+"CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o" \
 "CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o" \
 "CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o" \
 "CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o" \
@@ -203,6 +218,7 @@ rtdetr_web_EXTERNAL_OBJECTS =
 librtdetr_web.so: CMakeFiles/rtdetr_web.dir/apps/app_rtdetr_web.cpp.o
 librtdetr_web.so: CMakeFiles/rtdetr_web.dir/apps/rtdetr_decode.cu.o
 librtdetr_web.so: CMakeFiles/rtdetr_web.dir/apps/rtdetr_web.cpp.o
+librtdetr_web.so: CMakeFiles/rtdetr_web.dir/apps/threadpool.cpp.o
 librtdetr_web.so: CMakeFiles/rtdetr_web.dir/trt_common/cuda_tools.cpp.o
 librtdetr_web.so: CMakeFiles/rtdetr_web.dir/trt_common/ilogger.cpp.o
 librtdetr_web.so: CMakeFiles/rtdetr_web.dir/trt_common/preprocess_kernel.cu.o
@@ -251,7 +267,7 @@ librtdetr_web.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
 librtdetr_web.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
 librtdetr_web.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
 librtdetr_web.so: CMakeFiles/rtdetr_web.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library librtdetr_web.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/data02/xs/code/TensorRT_deploy/tensorrt-alpha-plus/webapi_rtdetr/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library librtdetr_web.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rtdetr_web.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
