@@ -4,23 +4,9 @@
 #include "rtdetr_web.hpp"
 #include <chrono>
 #include "crow.h"
+#include <string_view>
 using namespace std;
 
-inline vector<string> cocolabels = {
-        "person", "bicycle", "car", "motorcycle", "airplane",
-        "bus", "train", "truck", "boat", "traffic light", "fire hydrant",
-        "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse",
-        "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack",
-        "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis",
-        "snowboard", "sports ball", "kite", "baseball bat", "baseball glove",
-        "skateboard", "surfboard", "tennis racket", "bottle", "wine glass",
-        "cup", "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich",
-        "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake",
-        "chair", "couch", "potted plant", "bed", "dining table", "toilet", "tv",
-        "laptop", "mouse", "remote", "keyboard", "cell phone", "microwave",
-        "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase",
-        "scissors", "teddy bear", "hair drier", "toothbrush"
-};
 
 inline std::tuple<uint8_t, uint8_t, uint8_t> hsv2bgr(float h, float s, float v){
     const int h_i = static_cast<int>(h * 6);
@@ -133,7 +119,8 @@ void batch_inference(const std::string& img_root, const string& engine_file, int
             cv::rectangle(image, cv::Point(ibox.left, ibox.top), cv::Point(ibox.right, ibox.bottom), color, 2);
 
             auto name = cocolabels[ibox.label];
-            auto caption = cv::format("%s %.2f", name.c_str(), ibox.confidence);
+            // auto caption = cv::format("%s %.2f", name.c_str(), ibox.confidence);  // 使用string
+            auto caption = cv::format("%s %.2f", name.data(), ibox.confidence);  // 使用string_view
             int text_width = cv::getTextSize(caption, 0, 1, 2, nullptr).width + 10;
             cv::rectangle(image, cv::Point(ibox.left-2, ibox.top-32), cv::Point(ibox.left + text_width, ibox.top), color, -1);
             cv::putText(image, caption, cv::Point(ibox.left, ibox.top-5), 0, 1, cv::Scalar::all(0), 2, 16);
@@ -163,7 +150,8 @@ void single_inference(const std::string& img_root, const string& engine_file, in
 
         // 获取标签文本和置信度
         auto name = cocolabels[ibox.label];
-        auto caption = cv::format("%s %.2f", name.c_str(), ibox.confidence);
+        // auto caption = cv::format("%s %.2f", name.c_str(), ibox.confidence);  // 使用string
+        auto caption = cv::format("%s %.2f", name.data(), ibox.confidence);  // 使用string_view
 
         // 获取文本的尺寸
         int baseline = 0;
@@ -201,7 +189,8 @@ void inferWriteIMG(const cv::Mat& img, const string& engine_file, int gpuid){
 
         // 获取标签文本和置信度
         auto name = cocolabels[ibox.label];
-        auto caption = cv::format("%s %.2f", name.c_str(), ibox.confidence);
+        // auto caption = cv::format("%s %.2f", name.c_str(), ibox.confidence);  // 使用string
+        auto caption = cv::format("%s %.2f", name.data(), ibox.confidence);  // 使用string_view
 
         // 获取文本的尺寸
         int baseline = 0;
@@ -254,7 +243,8 @@ std::string inferGetIMGBase64(const cv::Mat& img, const std::string& engine_file
 
         // 标签文本和置信度
         auto name = cocolabels[ibox.label];
-        auto caption = cv::format("%s %.2f", name.c_str(), ibox.confidence);
+        // auto caption = cv::format("%s %.2f", name.c_str(), ibox.confidence);  // 使用string
+        auto caption = cv::format("%s %.2f", name.data(), ibox.confidence);  // 使用string_view
 
         // 绘制文本框和文本
         int baseline = 0;
@@ -294,7 +284,8 @@ std::string inferGetIMGBinary(const cv::Mat& img, const std::string& engine_file
 
         // 标签文本和置信度
         auto name = cocolabels[ibox.label];
-        auto caption = cv::format("%s %.2f", name.c_str(), ibox.confidence);
+        // auto caption = cv::format("%s %.2f", name.c_str(), ibox.confidence);  // 使用string
+        auto caption = cv::format("%s %.2f", name.data(), ibox.confidence);  // 使用string_view
 
         // 绘制文本框和文本
         int baseline = 0;

@@ -1,6 +1,7 @@
 #pragma once
 #include <opencv2/opencv.hpp>
 #include "../webapi_rtdetr/apps/app_rtdetr_web.cpp"
+#include "../webapi_rtdetr/apps/rtdetr_web.hpp"
 #include "../webapi_rtdetr/apps/threadpool.hpp"
 #include "crow.h"
 #include "crow/middlewares/cors.h"
@@ -18,7 +19,6 @@ RTDETRWEB::BoxArray inferGetBoxes(const cv::Mat& img, const string& engine_file,
 std::string inferGetIMGBase64(const cv::Mat& img, const string& engine_file, int gpuid);
 std::string inferGetIMGBinary(const cv::Mat& img, const string& engine_file, int gpuid);
 
-extern std::vector<std::string> cocolabels;
 
 class InferTask : public Task {
 public:
