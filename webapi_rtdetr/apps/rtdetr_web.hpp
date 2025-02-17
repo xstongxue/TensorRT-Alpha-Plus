@@ -8,6 +8,7 @@
 #include <opencv2/opencv.hpp>
 #include <string_view>
 #include <array>
+#include <mutex>
 
 // 定义 inline 变量，确保在多个源文件中共享
 inline const std::array<std::string_view, 80> cocolabels = {

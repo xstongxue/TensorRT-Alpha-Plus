@@ -17,12 +17,8 @@ ThreadPool::~ThreadPool() {
     }
 }
 
-void ThreadPool::submitTask(std::shared_ptr<Task> t) {
-    {
-        std::unique_lock<std::mutex> lock(queMtx);
-        tasks.push(t);
-    }
-    queCond.notify_one();
+std::future<void> ThreadPool::submitTask(std::shared_ptr<Task> task) {
+    return std::async(std::launch::async, &Task::execute, task);
 }
 
 void ThreadPool::workerThread() {

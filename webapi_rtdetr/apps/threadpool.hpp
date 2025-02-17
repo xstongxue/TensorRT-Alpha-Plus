@@ -7,6 +7,7 @@
 #include <queue>
 #include <atomic>
 #include <memory>
+#include <future>
 
 class Task {
 public:
@@ -19,7 +20,7 @@ public:
     explicit ThreadPool(size_t num_threads);
     ~ThreadPool();
 
-    void submitTask(std::shared_ptr<Task> t);
+    std::future<void> submitTask(std::shared_ptr<Task> task);
 
 private:
     std::atomic<bool> stop;

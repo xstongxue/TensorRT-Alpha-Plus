@@ -7,6 +7,7 @@
 #include "crow/middlewares/cors.h"
 #include "../utils/json.hpp" 
 using json = nlohmann::json;
+#include <future>  // 确保包含 future 头文件
 
 using namespace std;
 
@@ -22,12 +23,12 @@ std::string inferGetIMGBinary(const cv::Mat& img, const string& engine_file, int
 
 class InferTask : public Task {
 public:
-    InferTask(cv::Mat img, const std::string& model_path, int gpuid, json& response_json)
-        : img(std::move(img)), model_path(model_path), gpuid(gpuid), response_json(response_json) {}
+    InferTask(cv::Mat img, const std::string& model_path, int gpuid, json& response_json, std::mutex& json_mutex)
+        : img(std::move(img)), model_path(model_path), gpuid(gpuid), response_json(response_json), json_mutex(json_mutex) {}
 
     void execute() override {
         RTDETRWEB::BoxArray boxes;
-		// 获取推理的信息
+        // 获取推理的信息
         boxes = inferGetBoxes(img, model_path, gpuid);
         json boxes_json;
         for (const auto& box : boxes) {
@@ -40,6 +41,7 @@ public:
         }
 
         // Construct response
+        std::lock_guard<std::mutex> lock(json_mutex);  // Protect access to response_json
         response_json = {
             {"code", 200},
             {"message", "success"},
@@ -47,8 +49,8 @@ public:
         };
 
         // Release resources
-		img.release();  // 显式释放
-		boxes.clear();  // 显示释放
+        img.release();  // 显式释放
+        boxes.clear();  // 显示释放
     }
 
 private:
@@ -56,6 +58,7 @@ private:
     std::string model_path;
     int gpuid;
     json& response_json;
+    std::mutex& json_mutex;  // Mutex for thread-safe access to response_json
 };
 
 int main(int argc, char* argv[]){
@@ -183,12 +186,17 @@ int main(int argc, char* argv[]){
 					else
 					{
 						// 创建并提交任务到线程池（2024.12.20修改版本：加入线程池）
-						auto task = std::make_shared<InferTask>(img, model_path, gpuid, response_json);
-						thread_pool.submitTask(task);  // 提交任务到线程池
+						// 2025.2.17: 创建一个互斥锁，确保线程安全(多个线程之间不会同时访问 response_json )
+						std::mutex json_mutex;
+						auto task = std::make_shared<InferTask>(img, model_path, gpuid, response_json, json_mutex);
+						auto future = thread_pool.submitTask(task);  // 提交任务到线程池，返回future
+						// 等待任务完成
+						future.get();  // 这里会阻塞，直到任务执行完毕
 
 						img_data.clear();  // 显示释放
 						std::swap(img_data, temp_v);  // vector 容器通过clear并没有清空，需要通过swap或者shrink_to_fit
 						// 等待任务执行完成，返回响应
+						// cout << "response_json: " << response_json.dump(4) << endl;
 						return crow::response(response_json.dump(4));
 					}
                     // else
