@@ -8,7 +8,6 @@
 #include "trt_common/tensor_allocator.hpp"
 #include "trt_common/cuda_tools.hpp"
 
-
 namespace RTDETRWEB{
 
     using namespace std;

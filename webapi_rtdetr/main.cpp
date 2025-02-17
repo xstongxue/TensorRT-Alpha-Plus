@@ -180,14 +180,17 @@ int main(int argc, char* argv[]){
 						// 	return crow::response(200, detect_img_base64);
 						// }
 					}
-					// 创建并提交任务到线程池（2024.12.20修改版本：加入线程池）
-                    auto task = std::make_shared<InferTask>(img, model_path, gpuid, response_json);
-                    thread_pool.submitTask(task);  // 提交任务到线程池
+					else
+					{
+						// 创建并提交任务到线程池（2024.12.20修改版本：加入线程池）
+						auto task = std::make_shared<InferTask>(img, model_path, gpuid, response_json);
+						thread_pool.submitTask(task);  // 提交任务到线程池
 
-					img_data.clear();  // 显示释放
-					std::swap(img_data, temp_v);  // vector 容器通过clear并没有清空，需要通过swap或者shrink_to_fit
-                    // 等待任务执行完成，返回响应
-                    return crow::response(response_json.dump(4));
+						img_data.clear();  // 显示释放
+						std::swap(img_data, temp_v);  // vector 容器通过clear并没有清空，需要通过swap或者shrink_to_fit
+						// 等待任务执行完成，返回响应
+						return crow::response(response_json.dump(4));
+					}
                     // else
                     // {
                     //      // 记录起始时间

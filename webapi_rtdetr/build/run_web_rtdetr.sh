@@ -22,7 +22,7 @@ fi
 # conda activate base
 
 # 参数设置
-model_path="../../weights/rtdetr-l.trt"
+model_path="../../weights/rtdetr_dla.trt"
 device=0  # 指定设备
 port=8888 # 端口号
 

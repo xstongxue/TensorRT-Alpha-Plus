@@ -1,104 +1,11 @@
-(2024-12-21 03:31:55) [INFO    ] Crow/master server is running at http://0.0.0.0:8888 using 56 threads
-(2024-12-21 03:31:55) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
-(2024-12-21 03:32:02) [INFO    ] Request: 192.168.4.211:52900 0x5563d0b62910 HTTP/1.1 POST /pic_infer
+(2025-02-17 02:13:22) [INFO    ] Crow/master server is running at http://0.0.0.0:8888 using 56 threads
+(2025-02-17 02:13:22) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+(2025-02-17 02:13:26) [INFO    ] Request: 192.168.4.211:63494 0x555821a1f910 HTTP/1.1 POST /pic_infer
 
-Received parameters - model_path: ../../weights/rtdetr-l.trt, gpu: 0, port: 8888, is_save: false, is_show: true
-[2024-12-21 11:32:03][[35minfo[0m][rtdetr_web.cpp:165]:Engine destroy.
-(2024-12-21 03:32:03) [INFO    ] Response: 0x5563d0b62910 /pic_infer 200 0
-(2024-12-21 03:32:06) [INFO    ] Request: 192.168.4.211:52900 0x5563d0b62910 HTTP/1.1 POST /pic_infer
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+(2025-02-17 02:13:26) [INFO    ] Response: 0x555821a1f910 /pic_infer 200 0
+[2025-02-17 10:13:27][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-17 02:13:27) [INFO    ] Request: 192.168.4.211:63494 0x555821a1f910 HTTP/1.1 POST /pic_infer
 
-Received parameters - model_path: ../../weights/rtdetr-l.trt, gpu: 0, port: 8888, is_save: false, is_show: true
-[2024-12-21 11:32:07][[35minfo[0m][rtdetr_web.cpp:165]:Engine destroy.
-(2024-12-21 03:32:07) [INFO    ] Response: 0x5563d0b62910 /pic_infer 200 0
-(2024-12-21 03:32:07) [INFO    ] Request: 192.168.4.211:52900 0x5563d0b62910 HTTP/1.1 POST /pic_infer
-
-Received parameters - model_path: ../../weights/rtdetr-l.trt, gpu: 0, port: 8888, is_save: false, is_show: true
-[2024-12-21 11:32:08][[35minfo[0m][rtdetr_web.cpp:165]:Engine destroy.
-(2024-12-21 03:32:08) [INFO    ] Response: 0x5563d0b62910 /pic_infer 200 0
-(2024-12-21 03:32:08) [INFO    ] Request: 192.168.4.211:52900 0x5563d0b62910 HTTP/1.1 POST /pic_infer
-
-Received parameters - model_path: ../../weights/rtdetr-l.trt, gpu: 0, port: 8888, is_save: false, is_show: true
-[2024-12-21 11:32:09][[35minfo[0m][rtdetr_web.cpp:165]:Engine destroy.
-(2024-12-21 03:32:09) [INFO    ] Response: 0x5563d0b62910 /pic_infer 200 0
-(2024-12-21 03:32:10) [INFO    ] Request: 192.168.4.211:52900 0x5563d0b62910 HTTP/1.1 POST /pic_infer
-
-Received parameters - model_path: ../../weights/rtdetr-l.trt, gpu: 0, port: 8888, is_save: false, is_show: true
-[2024-12-21 11:32:10][[35minfo[0m][rtdetr_web.cpp:165]:Engine destroy.
-(2024-12-21 03:32:10) [INFO    ] Response: 0x5563d0b62910 /pic_infer 200 0
-(2024-12-21 03:32:11) [INFO    ] Request: 192.168.4.211:52900 0x5563d0b62910 HTTP/1.1 POST /pic_infer
-
-Received parameters - model_path: ../../weights/rtdetr-l.trt, gpu: 0, port: 8888, is_save: false, is_show: true
-[2024-12-21 11:32:11][[35minfo[0m][rtdetr_web.cpp:165]:Engine destroy.
-(2024-12-21 03:32:11) [INFO    ] Response: 0x5563d0b62910 /pic_infer 200 0
-(2024-12-21 03:32:11) [INFO    ] Request: 192.168.4.211:52900 0x5563d0b62910 HTTP/1.1 POST /pic_infer
-
-Received parameters - model_path: ../../weights/rtdetr-l.trt, gpu: 0, port: 8888, is_save: false, is_show: true
-[2024-12-21 11:32:12][[35minfo[0m][rtdetr_web.cpp:165]:Engine destroy.
-(2024-12-21 03:32:12) [INFO    ] Response: 0x5563d0b62910 /pic_infer 200 0
-(2024-12-21 03:32:12) [INFO    ] Request: 192.168.4.211:52900 0x5563d0b62910 HTTP/1.1 POST /pic_infer
-
-Received parameters - model_path: ../../weights/rtdetr-l.trt, gpu: 0, port: 8888, is_save: false, is_show: true
-[2024-12-21 11:32:13][[35minfo[0m][rtdetr_web.cpp:165]:Engine destroy.
-(2024-12-21 03:32:13) [INFO    ] Response: 0x5563d0b62910 /pic_infer 200 0
-(2024-12-21 03:32:13) [INFO    ] Request: 192.168.4.211:52900 0x5563d0b62910 HTTP/1.1 POST /pic_infer
-
-Received parameters - model_path: ../../weights/rtdetr-l.trt, gpu: 0, port: 8888, is_save: false, is_show: true
-[2024-12-21 11:32:13][[35minfo[0m][rtdetr_web.cpp:165]:Engine destroy.
-(2024-12-21 03:32:13) [INFO    ] Response: 0x5563d0b62910 /pic_infer 200 0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d30
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d38
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d40
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d48
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d50
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d58
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d60
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d68
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d70
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d78
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d80
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d88
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d90
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57d98
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57da0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57da8
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57db0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57db8
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57dc0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57dc8
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57dd0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57dd8
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57de0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57de8
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57df0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57df8
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e00
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e08
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e10
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e18
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e20
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e28
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e30
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e38
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e40
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e48
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e50
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e58
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e60
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e68
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e70
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e78
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e80
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e88
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e90
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57e98
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57ea0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57ea8
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57eb0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57eb8
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57ec0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57ec8
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57ed0
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57ed8
-(2024-12-21 03:32:21) [INFO    ] Closing IO service 0x5563d0b57ee0
-(2024-12-21 03:32:21) [INFO    ] Closing main IO service (0x5563d0b07358)
-(2024-12-21 03:32:21) [INFO    ] Exiting.
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+(2025-02-17 02:13:27) [INFO    ] Response: 0x555821a1f910 /pic_infer 200 0
