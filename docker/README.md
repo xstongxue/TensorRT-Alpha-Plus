@@ -6,11 +6,11 @@
 - download file:  "TensorRT-8.4.2.4.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz"
 
 ```bash
-cd TensorRT-Alpha/docker
-cp TensorRT-8.4.2.4.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz .
+cd TensorRT-Alpha-Plus/docker
+cp "/data02/xs/app/TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-11.8.tar.gz" ./
 ```
 
 ## 2. build docker images
 ```bash
-docker build -f ubuntu18.04-cu113.Dockerfile --network=host -t trta .
+docker build -f ubuntu18.04-cu117.Dockerfile --network=host -t trta .
 ```

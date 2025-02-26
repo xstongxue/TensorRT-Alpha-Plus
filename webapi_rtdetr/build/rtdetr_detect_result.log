@@ -1,391 +1,514 @@
-(2025-02-17 07:18:04) [INFO    ] Crow/master server is running at http://0.0.0.0:8888 using 56 threads
-(2025-02-17 07:18:04) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
-(2025-02-17 07:18:10) [INFO    ] Request: 192.168.4.211:59919 0x557fa8b9e910 HTTP/1.1 POST /pic_infer
+(2025-02-18 09:14:09) [INFO    ] Crow/master server is running at http://0.0.0.0:8888 using 56 threads
+(2025-02-18 09:14:09) [INFO    ] Call `app.loglevel(crow::LogLevel::Warning)` to hide Info level logs.
+(2025-02-18 09:14:23) [INFO    ] Request: 192.168.4.189:62546 0x55891c9f9910 HTTP/1.1 POST /pic_infer
 
 Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
-[2025-02-17 15:18:11][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
-response_json: {
-    "code": 200,
-    "data": {
-        "json": [
-            {
-                "box": [
-                    1234.129638671875,
-                    1452.1961669921875,
-                    2328.1357421875,
-                    2028.61376953125
-                ],
-                "confidence": 0.9510365128517151,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1236.469970703125,
-                    325.3726806640625,
-                    2331.100830078125,
-                    729.6195678710938
-                ],
-                "confidence": 0.9497914910316467,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1233.853271484375,
-                    2028.573974609375,
-                    2324.39501953125,
-                    2433.303955078125
-                ],
-                "confidence": 0.9477344751358032,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1231.513427734375,
-                    2432.93896484375,
-                    2323.560546875,
-                    2834.7900390625
-                ],
-                "confidence": 0.9481204152107239,
-                "type": "car"
-            },
-            {
-                "box": [
-                    146.85601806640625,
-                    911.6181640625,
-                    1223.68212890625,
-                    1441.5487060546875
-                ],
-                "confidence": 0.957926869392395,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1237.281494140625,
-                    729.5885620117188,
-                    2330.543701171875,
-                    1453.0830078125
-                ],
-                "confidence": 0.9581407904624939,
-                "type": "car"
-            },
-            {
-                "box": [
-                    142.9034423828125,
-                    2338.020751953125,
-                    1220.87255859375,
-                    3249.66064453125
-                ],
-                "confidence": 0.9584673643112183,
-                "type": "car"
-            },
-            {
-                "box": [
-                    152.49615478515625,
-                    323.8588562011719,
-                    1225.03857421875,
-                    911.9324951171875
-                ],
-                "confidence": 0.9605878591537476,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1231.947021484375,
-                    2834.955322265625,
-                    2318.157470703125,
-                    3254.915283203125
-                ],
-                "confidence": 0.9210878014564514,
-                "type": "car"
-            },
-            {
-                "box": [
-                    144.3043212890625,
-                    1441.9541015625,
-                    1225.86767578125,
-                    2336.419189453125
-                ],
-                "confidence": 0.9608600735664368,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1318.842041015625,
-                    843.4551391601563,
-                    2216.932373046875,
-                    1224.787353515625
-                ],
-                "confidence": 0.8302958011627197,
-                "type": "illu"
-            },
-            {
-                "box": [
-                    208.97552490234375,
-                    2469.674560546875,
-                    1215.706298828125,
-                    2981.216796875
-                ],
-                "confidence": 0.7582091093063354,
-                "type": "illu"
-            },
-            {
-                "box": [
-                    212.1177978515625,
-                    1508.6490478515625,
-                    1219.989501953125,
-                    2073.16650390625
-                ],
-                "confidence": 0.7613468766212463,
-                "type": "illu"
-            }
-        ]
-    },
-    "message": "success"
-}
-(2025-02-17 07:18:11) [INFO    ] Response: 0x557fa8b9e910 /pic_infer 200 0
-(2025-02-17 07:18:19) [INFO    ] Request: 192.168.4.211:59924 0x7fc590000be0 HTTP/1.1 POST /pic_infer
+[2025-02-18 17:14:24][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:14:24) [INFO    ] Response: 0x55891c9f9910 /pic_infer 200 0
+(2025-02-18 09:15:41) [INFO    ] Request: 192.168.4.189:62708 0x7f7748000be0 HTTP/1.1 POST /pic_infer
 
 Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
-[2025-02-17 15:18:20][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
-response_json: {
-    "code": 200,
-    "data": {
-        "json": [
-            {
-                "box": [
-                    1234.129638671875,
-                    1452.1961669921875,
-                    2328.1357421875,
-                    2028.61376953125
-                ],
-                "confidence": 0.9510365128517151,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1236.469970703125,
-                    325.3726806640625,
-                    2331.100830078125,
-                    729.6195678710938
-                ],
-                "confidence": 0.9497914910316467,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1233.853271484375,
-                    2028.573974609375,
-                    2324.39501953125,
-                    2433.303955078125
-                ],
-                "confidence": 0.9477344751358032,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1231.513427734375,
-                    2432.93896484375,
-                    2323.560546875,
-                    2834.7900390625
-                ],
-                "confidence": 0.9481204152107239,
-                "type": "car"
-            },
-            {
-                "box": [
-                    146.85601806640625,
-                    911.6181640625,
-                    1223.68212890625,
-                    1441.5487060546875
-                ],
-                "confidence": 0.957926869392395,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1237.281494140625,
-                    729.5885620117188,
-                    2330.543701171875,
-                    1453.0830078125
-                ],
-                "confidence": 0.9581407904624939,
-                "type": "car"
-            },
-            {
-                "box": [
-                    142.9034423828125,
-                    2338.020751953125,
-                    1220.87255859375,
-                    3249.66064453125
-                ],
-                "confidence": 0.9584673643112183,
-                "type": "car"
-            },
-            {
-                "box": [
-                    152.49615478515625,
-                    323.8588562011719,
-                    1225.03857421875,
-                    911.9324951171875
-                ],
-                "confidence": 0.9605878591537476,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1231.947021484375,
-                    2834.955322265625,
-                    2318.157470703125,
-                    3254.915283203125
-                ],
-                "confidence": 0.9210878014564514,
-                "type": "car"
-            },
-            {
-                "box": [
-                    144.3043212890625,
-                    1441.9541015625,
-                    1225.86767578125,
-                    2336.419189453125
-                ],
-                "confidence": 0.9608600735664368,
-                "type": "car"
-            },
-            {
-                "box": [
-                    1318.842041015625,
-                    843.4551391601563,
-                    2216.932373046875,
-                    1224.787353515625
-                ],
-                "confidence": 0.8302958011627197,
-                "type": "illu"
-            },
-            {
-                "box": [
-                    208.97552490234375,
-                    2469.674560546875,
-                    1215.706298828125,
-                    2981.216796875
-                ],
-                "confidence": 0.7582091093063354,
-                "type": "illu"
-            },
-            {
-                "box": [
-                    212.1177978515625,
-                    1508.6490478515625,
-                    1219.989501953125,
-                    2073.16650390625
-                ],
-                "confidence": 0.7613468766212463,
-                "type": "illu"
-            }
-        ]
-    },
-    "message": "success"
-}
-(2025-02-17 07:18:20) [INFO    ] Response: 0x7fc590000be0 /pic_infer 200 0
-(2025-02-17 07:19:51) [INFO    ] Request: 192.168.4.211:59995 0x7fc590002220 HTTP/1.1 POST /pic_infer
+[2025-02-18 17:15:42][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:15:42) [INFO    ] Response: 0x7f7748000be0 /pic_infer 200 0
+(2025-02-18 09:20:05) [INFO    ] Request: 192.168.4.189:63052 0x7f7748002220 HTTP/1.1 POST /pic_infer
 
 Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
-[2025-02-17 15:19:51][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
-response_json: {
-    "code": 200,
-    "data": {
-        "json": [
-            {
-                "box": [
-                    152.58633422851563,
-                    1113.3594970703125,
-                    1289.8466796875,
-                    1321.3453369140625
-                ],
-                "confidence": 0.9480288624763489,
-                "type": "car"
-            },
-            {
-                "box": [
-                    152.57626342773438,
-                    360.2945861816406,
-                    1286.62158203125,
-                    534.6432495117188
-                ],
-                "confidence": 0.9483221173286438,
-                "type": "car"
-            },
-            {
-                "box": [
-                    151.1234130859375,
-                    939.8010864257813,
-                    1289.841064453125,
-                    1113.456298828125
-                ],
-                "confidence": 0.9396955966949463,
-                "type": "car"
-            },
-            {
-                "box": [
-                    154.96856689453125,
-                    1321.65380859375,
-                    1289.546875,
-                    1792.13916015625
-                ],
-                "confidence": 0.9427780508995056,
-                "type": "car"
-            },
-            {
-                "box": [
-                    152.69528198242188,
-                    221.43653869628906,
-                    1285.641845703125,
-                    360.4744567871094
-                ],
-                "confidence": 0.9424006938934326,
-                "type": "car"
-            },
-            {
-                "box": [
-                    149.7442626953125,
-                    534.2554321289063,
-                    1291.31396484375,
-                    939.7264404296875
-                ],
-                "confidence": 0.9564370512962341,
-                "type": "car"
-            },
-            {
-                "box": [
-                    154.63116455078125,
-                    104.64009857177734,
-                    1287.187255859375,
-                    221.36170959472656
-                ],
-                "confidence": 0.8966719508171082,
-                "type": "car"
-            },
-            {
-                "box": [
-                    213.19564819335938,
-                    1357.6373291015625,
-                    1247.374267578125,
-                    1784.559326171875
-                ],
-                "confidence": 0.7962294816970825,
-                "type": "illu"
-            },
-            {
-                "box": [
-                    309.2418212890625,
-                    596.27099609375,
-                    1161.696533203125,
-                    827.6680908203125
-                ],
-                "confidence": 0.6408102512359619,
-                "type": "illu"
-            }
-        ]
-    },
-    "message": "success"
-}
-(2025-02-17 07:19:51) [INFO    ] Response: 0x7fc590002220 /pic_infer 200 0
+[2025-02-18 17:20:05][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:20:05) [INFO    ] Response: 0x7f7748002220 /pic_infer 200 0
+(2025-02-18 09:21:09) [INFO    ] Request: 192.168.4.189:63175 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:21:10][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:21:10) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 09:26:37) [INFO    ] Request: 192.168.4.189:63828 0x7f7748002220 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:26:38][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:26:38) [INFO    ] Response: 0x7f7748002220 /pic_infer 200 0
+(2025-02-18 09:27:08) [INFO    ] Request: 192.168.4.189:63947 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:27:08][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:27:08) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 09:33:06) [INFO    ] Request: 192.168.4.189:64483 0x7f7748002220 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:33:06][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:33:06) [INFO    ] Response: 0x7f7748002220 /pic_infer 200 0
+(2025-02-18 09:34:52) [INFO    ] Request: 192.168.4.189:64929 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:34:52][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:34:52) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 09:35:55) [INFO    ] Request: 192.168.4.189:65082 0x7f7748002220 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:35:55][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:35:56) [INFO    ] Response: 0x7f7748002220 /pic_infer 200 0
+(2025-02-18 09:36:53) [INFO    ] Request: 192.168.4.189:65197 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:36:53][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:36:53) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 09:37:37) [INFO    ] Request: 192.168.4.189:65272 0x7f7748002220 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:37:37][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:37:37) [INFO    ] Response: 0x7f7748002220 /pic_infer 200 0
+(2025-02-18 09:41:33) [INFO    ] Request: 192.168.4.189:49216 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:41:34][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:41:34) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 09:42:04) [INFO    ] Request: 192.168.4.189:49246 0x7f7748002220 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:42:04][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:42:04) [INFO    ] Response: 0x7f7748002220 /pic_infer 200 0
+(2025-02-18 09:43:52) [INFO    ] Request: 192.168.4.189:49436 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:43:53][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:43:53) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 09:45:30) [INFO    ] Request: 192.168.4.189:49651 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:45:31][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:45:31) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-18 09:46:04) [INFO    ] Request: 192.168.4.189:49746 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:46:05][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:46:05) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 09:49:40) [INFO    ] Request: 192.168.4.189:50067 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:49:41][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:49:41) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-18 09:50:41) [INFO    ] Request: 192.168.4.189:50247 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:50:42][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:50:42) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 09:54:15) [INFO    ] Request: 192.168.4.189:50529 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:54:16][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:54:16) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-18 09:54:53) [INFO    ] Request: 192.168.4.189:50610 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 17:54:54][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 09:54:54) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 10:44:58) [INFO    ] Request: 192.168.4.189:51290 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 18:44:58][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 10:44:58) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-18 10:56:25) [INFO    ] Request: 192.168.4.189:51954 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 18:56:25][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 10:56:25) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 10:57:29) [INFO    ] Request: 192.168.4.189:52162 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 18:57:30][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 10:57:30) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-18 10:57:54) [INFO    ] Request: 192.168.4.189:52254 0x7f77480037b0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 18:57:54][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 10:57:54) [INFO    ] Response: 0x7f77480037b0 /pic_infer 200 0
+(2025-02-18 10:59:53) [INFO    ] Request: 192.168.4.189:52437 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 18:59:53][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 10:59:53) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-18 11:07:49) [INFO    ] Request: 192.168.4.189:53263 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 19:07:49][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 11:07:49) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-18 11:15:33) [INFO    ] Request: 192.168.4.189:54276 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-18 19:15:33][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-18 11:15:33) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-19 00:40:25) [INFO    ] Request: 192.168.4.189:65166 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 08:40:26][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 00:40:26) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-19 00:41:07) [INFO    ] Request: 192.168.4.189:65277 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 08:41:08][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 00:41:08) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-19 00:46:39) [INFO    ] Request: 192.168.4.189:49369 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 08:46:40][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 00:46:40) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-19 00:49:37) [INFO    ] Request: 192.168.4.189:50045 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 08:49:37][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 00:49:37) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-19 00:52:29) [INFO    ] Request: 192.168.4.189:50400 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 08:52:29][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 00:52:29) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-19 00:53:44) [INFO    ] Request: 192.168.4.189:50608 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 08:53:45][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 00:53:45) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-19 00:55:04) [INFO    ] Request: 192.168.4.189:50780 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 08:55:05][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 00:55:05) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-19 01:02:11) [INFO    ] Request: 192.168.4.189:51967 0x7f7748004d40 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:02:11][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:02:11) [INFO    ] Response: 0x7f7748004d40 /pic_infer 200 0
+(2025-02-19 01:02:23) [INFO    ] Request: 192.168.4.189:52007 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:02:24][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:02:24) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-19 01:02:42) [INFO    ] Request: 192.168.4.189:52099 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:02:43][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:02:43) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:02:51) [INFO    ] Request: 192.168.4.189:52125 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:02:52][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:02:52) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-19 01:03:45) [INFO    ] Request: 192.168.4.189:52184 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:03:45][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:03:45) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:04:41) [INFO    ] Request: 192.168.4.189:52301 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:04:42][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:04:42) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-19 01:05:06) [INFO    ] Request: 192.168.4.189:52449 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:05:07][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:05:07) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:05:16) [INFO    ] Request: 192.168.4.189:52509 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:05:16][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:05:16) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-19 01:05:25) [INFO    ] Request: 192.168.4.189:52567 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:05:25][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:05:25) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:05:36) [INFO    ] Request: 192.168.4.189:52627 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:05:37][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:05:37) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-19 01:05:47) [INFO    ] Request: 192.168.4.189:52683 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:05:48][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:05:48) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:06:00) [INFO    ] Request: 192.168.4.189:52750 0x7f77480062d0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:06:00][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:06:00) [INFO    ] Response: 0x7f77480062d0 /pic_infer 200 0
+(2025-02-19 01:12:09) [INFO    ] Request: 192.168.4.189:53593 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:12:10][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:12:10) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:12:28) [INFO    ] Request: 192.168.4.189:53688 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:12:29][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:12:29) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:13:00) [INFO    ] Request: 192.168.4.189:53779 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:13:01][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:13:01) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:14:55) [INFO    ] Request: 192.168.4.189:53979 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:14:55][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:14:55) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:15:28) [INFO    ] Request: 192.168.4.189:54085 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:15:28][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:15:28) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:15:41) [INFO    ] Request: 192.168.4.189:54155 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:15:41][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:15:41) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:17:34) [INFO    ] Request: 192.168.4.189:54360 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:17:35][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:17:35) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:19:42) [INFO    ] Request: 192.168.4.189:54893 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:19:43][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:19:43) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:23:05) [INFO    ] Request: 192.168.4.189:55208 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:23:06][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:23:06) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:23:43) [INFO    ] Request: 192.168.4.189:55303 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:23:44][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:23:44) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:23:58) [INFO    ] Request: 192.168.4.189:55374 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:23:58][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:23:58) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:24:57) [INFO    ] Request: 192.168.4.189:55515 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:24:58][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:24:58) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:26:02) [INFO    ] Request: 192.168.4.189:55649 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:26:02][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:26:02) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:27:07) [INFO    ] Request: 192.168.4.189:55774 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:27:08][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:27:08) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:27:18) [INFO    ] Request: 192.168.4.189:55827 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:27:18][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:27:18) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:29:55) [INFO    ] Request: 192.168.4.189:56493 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:29:56][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:29:56) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:31:24) [INFO    ] Request: 192.168.4.189:56678 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:31:24][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:31:24) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:36:38) [INFO    ] Request: 192.168.4.189:57079 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:36:39][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:36:39) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:40:31) [INFO    ] Request: 192.168.4.189:57604 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:40:32][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:40:32) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:42:35) [INFO    ] Request: 192.168.4.189:57868 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:42:35][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:42:35) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:44:53) [INFO    ] Request: 192.168.4.189:58078 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:44:54][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:44:54) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:51:04) [INFO    ] Request: 192.168.4.189:58629 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:51:04][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:51:04) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:52:07) [INFO    ] Request: 192.168.4.189:58787 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:52:08][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:52:08) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:52:52) [INFO    ] Request: 192.168.4.189:58903 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:52:53][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:52:53) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:53:45) [INFO    ] Request: 192.168.4.189:59030 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:53:45][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:53:45) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 01:58:18) [INFO    ] Request: 192.168.4.189:59600 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:58:18][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:58:18) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 01:59:23) [INFO    ] Request: 192.168.4.189:59736 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 09:59:24][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 01:59:24) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 02:00:30) [INFO    ] Request: 192.168.4.189:59931 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 10:00:30][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 02:00:30) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 02:01:28) [INFO    ] Request: 192.168.4.189:60084 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 10:01:28][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 02:01:28) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 02:02:38) [INFO    ] Request: 192.168.4.189:60289 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 10:02:38][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 02:02:38) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 02:05:44) [INFO    ] Request: 192.168.4.189:60560 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 10:05:45][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 02:05:45) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 02:16:12) [INFO    ] Request: 192.168.4.189:61704 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 10:16:12][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 02:16:12) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 02:18:06) [INFO    ] Request: 192.168.4.189:61880 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 10:18:07][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 02:18:07) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 06:01:25) [INFO    ] Request: 192.168.4.189:53261 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:01:25][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:01:25) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 06:16:07) [INFO    ] Request: 192.168.4.189:55020 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:16:08][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:16:08) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 06:29:30) [INFO    ] Request: 192.168.4.189:57330 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:29:31][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:29:31) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 06:29:40) [INFO    ] Request: 192.168.4.189:57394 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:29:40][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:29:40) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 06:31:30) [INFO    ] Request: 192.168.4.189:57470 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:31:31][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:31:31) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 06:32:51) [INFO    ] Request: 192.168.4.189:57603 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:32:51][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:32:51) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 06:33:33) [INFO    ] Request: 192.168.4.189:57621 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:33:34][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:33:34) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 06:37:05) [INFO    ] Request: 192.168.4.189:57660 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:37:05][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:37:06) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 06:40:35) [INFO    ] Request: 192.168.4.189:57749 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:40:35][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:40:35) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 06:43:32) [INFO    ] Request: 192.168.4.189:57992 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:43:33][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:43:33) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 06:46:41) [INFO    ] Request: 192.168.4.189:58624 0x7f7748008df0 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:46:42][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:46:42) [INFO    ] Response: 0x7f7748008df0 /pic_infer 200 0
+(2025-02-19 06:50:58) [INFO    ] Request: 192.168.4.189:58820 0x7f7748007860 HTTP/1.1 POST /pic_infer
+
+Received parameters - model_path: ../../weights/rtdetr_dla.trt, gpu: 0, port: 8888, is_save: false, is_show: false
+[2025-02-19 14:50:59][[35minfo[0m][rtdetr_web.cpp:164]:Engine destroy.
+(2025-02-19 06:50:59) [INFO    ] Response: 0x7f7748007860 /pic_infer 200 0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed30
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed38
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed40
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed48
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed50
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed58
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed60
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed68
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed70
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed78
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed80
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed88
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed90
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eed98
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeda0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeda8
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eedb0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eedb8
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eedc0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eedc8
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eedd0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eedd8
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eede0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eede8
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eedf0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eedf8
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee00
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee08
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee10
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee18
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee20
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee28
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee30
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee38
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee40
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee48
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee50
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee58
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee60
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee68
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee70
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee78
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee80
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee88
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee90
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eee98
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeea0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeea8
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeeb0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeeb8
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeec0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeec8
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeed0
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeed8
+(2025-02-19 07:54:47) [INFO    ] Closing IO service 0x55891c9eeee0
+(2025-02-19 07:54:47) [INFO    ] Closing main IO service (0x55891c99e358)
+(2025-02-19 07:54:47) [INFO    ] Exiting.

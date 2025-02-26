@@ -2,3 +2,5 @@ weights
 rtdetr_dla
 weights/*
 rtdetr_dla/*
+*.tar.gz
+*.log
